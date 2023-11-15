@@ -1,0 +1,6 @@
+CREATE TABLE acervo (
+id_acervo SERIAL NOT NULL,
+nome VARCHAR (256) NOT NULL UNIQUE,
+ano INTEGER NOT NULL,
+PRIMARY KEY (id_acervo)
+);
