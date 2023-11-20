@@ -1,5 +1,6 @@
 CREATE TABLE autor (
-id_autor SERIAL NOT NULL,
-nome VARCHAR (256) UNIQUE,
-PRIMARY KEY (id_autor)
+	id SERIAL,
+	PRIMARY KEY(id),
+	nome VARCHAR (256),
+	id_acervo INTEGER
 );

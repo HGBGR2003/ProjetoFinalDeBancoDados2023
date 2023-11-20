@@ -1,5 +1,7 @@
 CREATE TABLE disciplina (
-id_disciplina SERIAL NOT NULL,
-nome VARCHAR (256) NOT NULL,
-PRIMARY KEY (id_disciplina)
+	id SERIAL,
+	PRIMARY KEY(id),
+	nome VARCHAR (256),
+	id_carga_horaria INTEGER,
+	id_ementa INTEGER
 );

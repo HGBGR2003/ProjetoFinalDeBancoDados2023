@@ -1,5 +1,8 @@
 CREATE TABLE matriz_curricular (
-id_matriz_curricular SERIAL NOT NULL,
-ano_periodo INTEGER NOT NULL UNIQUE,
-PRIMARY KEY (id_matriz_curricular)
-)
+id SERIAL,
+PRIMARY KEY(id),
+ano_periodo INTEGER,
+id_curso INTEGER,
+id_nucleo INTEGER,
+FOREIGN KEY(id_curso) REFERENCES curso (id) ON DELETE CASCADE ON UPDATE CASCADE
+);

@@ -1,12 +1,12 @@
 CREATE TABLE carga_horaria (
-id_carga_horaria SERIAL NOT NULL,
-casep INTEGER NOT NULL,
-cased INTEGER,
-casr INTEGER NOT NULL,
-chtap INTEGER,
-chtad INTEGER NOT NULL,
-chtar INTEGER NOT NULL,
-qap INTEGER NOT NULL,
-qaead INTEGER NOT NULL,
-PRIMARY KEY (id_carga_horaria)
+	id SERIAL,
+	PRIMARY KEY(id),
+	casep INTEGER NOT NULL,
+	cased INTEGER,
+	casr INTEGER GENERATED ALWAYS AS (casep + cased) STORED,
+	chtap INTEGER NOT NULL,
+	chtad INTEGER,
+	chtar INTEGER GENERATED ALWAYS AS (chtap + chtad) STORED,
+	qap INTEGER NOT NULL,
+	qaead INTEGER
 );

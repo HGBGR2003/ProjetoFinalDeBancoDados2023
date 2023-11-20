@@ -1,5 +1,6 @@
-CREATE TABLE núcleo (
-id_nucleo SERIAL NOT NULL,
-tipo tipo,
-PRIMARY KEY (id_nucleo)
+CREATE TABLE nucleo (
+id SERIAL,
+PRIMARY KEY(id),
+tipo VARCHAR (256),
+id_disciplina INTEGER
 );
