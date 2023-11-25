@@ -7,3 +7,5 @@ ADD CONSTRAINT fk_ementa_bibliografia_complementar
 FOREIGN KEY (id_bibliografia_complementar) REFERENCES bibliografia_complementar(id) ON DELETE CASCADE ON UPDATE CASCADE;*/
 
 /*ALTER TABLE ementa DROP COLUMN id_bibliografia_basica, DROP COLUMN id_bibliografia_complementar;*/
+
+ALTER TABLE ementa ADD COLUMN id_disciplina INTEGER;
