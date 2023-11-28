@@ -1,1 +1,0 @@
-1 - SELECT disciplina.nome, matriz_curricular.ano_periodo FROM ((disciplina JOIN nucleo ON disciplina.id_nucleo = nucleo.id) JOIN matriz_curricular ON nucleo.id_matriz_curricular = matriz_curricular.id)
