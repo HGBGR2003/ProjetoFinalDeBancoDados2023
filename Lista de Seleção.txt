@@ -1,0 +1,17 @@
+1 - Todas as disciplinas de uma determinada matriz separadas pelo ano/período
+
+2 - A carga horaria total por ano/período de uma determinada matriz
+
+3 - Todas as disciplinas de todos os núcleos independente do ano/período de uma determinada matriz
+
+4 -  Tdas as referências bibliográficas concatenadas da editora FTD
+
+5 - Todas as disciplinas do núcleo profissionalizante separados por ano/período de uma determinada matriz
+
+6 - A disciplina ordenada e mostrada o curso em que está a matéria.
+
+7 - A ementa de cada disciplina.
+
+8 - Selecionar o nome e o ano dos itens no acervo.
+
+9 - Selecionar ás disciplinas que possuem uma determinada carga horária mínima.
