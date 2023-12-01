@@ -1,7 +1,0 @@
-CREATE TABLE curso (
-id SERIAL,
-PRIMARY KEY(id),
-nome VARCHAR (256) UNIQUE,
-campus VARCHAR (256),
-periodo VARCHAR (10)
-);
