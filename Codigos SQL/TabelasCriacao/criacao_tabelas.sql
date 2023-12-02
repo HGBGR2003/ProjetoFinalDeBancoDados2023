@@ -77,20 +77,12 @@ CREATE TABLE acervo (
 	FOREIGN KEY(id_editora) REFERENCES editora (id) ON DELETE CASCADE ON UPDATE CASCADE
 );
 
-CREATE TABLE bibliografia_basica (
+CREATE TABLE bibliografia (
 	id SERIAL,
 	PRIMARY KEY(id),
+	tipo_bibliografia VARCHAR (27),
 	id_acervo INTEGER,
 	id_ementa INTEGER,
 	FOREIGN KEY(id_acervo) REFERENCES acervo (id) ON DELETE CASCADE ON UPDATE CASCADE,
 	FOREIGN KEY(id_ementa) REFERENCES ementa (id) ON DELETE CASCADE ON UPDATE CASCADE
 );
-
-CREATE TABLE bibliografia_complementar (
-	id SERIAL,
-	PRIMARY KEY(id),
-	id_acervo INTEGER,
-	id_ementa INTEGER,
-	FOREIGN KEY(id_acervo) REFERENCES acervo (id) ON DELETE CASCADE ON UPDATE CASCADE,
-	FOREIGN KEY(id_ementa) REFERENCES ementa (id) ON DELETE CASCADE ON UPDATE CASCADE
-); 

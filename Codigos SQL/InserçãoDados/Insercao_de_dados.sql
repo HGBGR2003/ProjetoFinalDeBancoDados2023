@@ -127,18 +127,14 @@ INSERT INTO acervo (nome, ano, id_autor, id_editora)
 		   ('Da fala para a escrita: atividades de retextualização', 2010, 6, 6);
 /*ACERVO*/
 
-/*BIBLIOGRAFIA BASICA*/
-INSERT INTO bibliografia_basica (id_acervo, id_ementa)
-	VALUES (1, 1),
-		   (2, 1),
-		   (3, 1);
-/*BIBLIOGRAFIA BASICA*/
-
-/*BIBLIOGRAFIA COMPLEMENTAR*/
-INSERT INTO bibliografia_complementar (id_acervo, id_ementa)
-	VALUES (4, 1),
-		   (5, 1),
-		   (6, 1),
-		   (7, 1),
-		   (8, 1);
-/*BIBLIOGRAFIA COMPLEMENTAR*/
+/*BIBLIOGRAFIA*/
+INSERT INTO bibliografia (tipo_bibliografia, id_acervo, id_ementa)
+	VALUES ('bibliografia basica', 1, 1),
+		   ('bibliografia basica', 2, 1),
+		   ('bibliografia basica', 3, 1),
+		   ('bibliografia complementar', 4, 1),
+		   ('bibliografia complementar', 5, 1),
+		   ('bibliografia complementar', 6, 1),
+		   ('bibliografia complementar', 7, 1),
+		   ('bibliografia complementar', 8, 1);
+/*BIBLIOGRAFIA*/
