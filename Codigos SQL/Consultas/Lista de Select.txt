@@ -1,3 +1,13 @@
+/*Número 1*/
+/*Todas as disciplinas de uma determinada matriz separadas pelo ano/período*/
+SELECT disciplina.nome, matriz_curricular.ano_periodo FROM ((disciplina join nucleo on disciplina.id_nucleo = nucleo.id) join matriz_curricular on nucleo.id_matriz_curricular = matriz_curricular.id);
+
+/*Número 2*/
+/* A carga horaria total por ano/período de uma determinada matriz*/
+SELECT matriz_curricular.ano_periodo, SUM(carga_horaria.chtar) FROM disciplina JOIN carga_horaria ON disciplina.id_carga_horaria = carga_horaria.id 
+JOIN nucleo ON disciplina.id_nucleo = nucleo.id JOIN matriz_curricular ON nucleo.id_matriz_curricular = matriz_curricular.id
+WHERE nucleo.tipo = 'disciplinas de nucleo comum' GROUP BY matriz_curricular.ano_periodo;
+
 /*Número 3*/
 /*Todas as disciplinas de todos os núcleos independente do ano/período de uma determinada matriz*/
 /*SELECT matriz_curricular.ano_periodo, disciplina.nome, nucleo.tipo FROM (disciplina JOIN nucleo ON nucleo.id = disciplina.id_nucleo) JOIN matriz_curricular
@@ -13,11 +23,13 @@ FROM acervo JOIN editora ON editora.id = acervo.id_editora JOIN autor ON editora
 /*SELECT matriz_curricular.ano_periodo, disciplina.nome, nucleo.tipo FROM disciplina JOIN nucleo ON disciplina.id_nucleo = nucleo.id JOIN matriz_curricular ON matriz_curricular.id = nucleo.id_matriz_curricular
 WHERE nucleo.tipo = 'disciplinas de nucleo profissionalizante'*/
 
-/*Número 6*//*Mostre todas as disciplinas, e a qual curso ela está associada.*/
+/*Número 6*/
+/*Mostre todas as disciplinas, e a qual curso ela está associada.*/
 /*SELECT disciplina.nome, curso.nome  FROM disciplina JOIN nucleo ON disciplina.id_nucleo = nucleo.id JOIN matriz_curricular ON nucleo.id_matriz_curricular = matriz_curricular.id
 JOIN curso ON matriz_curricular.id_curso = curso.id*/
 
-/*Número 7*//*Exiba a ementa completa envolvendo os acervo relacionados cada disciplina*/
+/*Número 7*/
+/*Exiba a ementa completa envolvendo os acervo relacionados cada disciplina*/
 /*SELECT disciplina.nome, ementa.objetivo, ementa.conteudo, bibliografia.tipo_bibliografia, acervo.nome
 FROM disciplina JOIN ementa ON disciplina.id = ementa.id_disciplina JOIN bibliografia ON ementa.id = bibliografia.id_ementa
 JOIN acervo ON bibliografia.id_acervo = acervo.id 
@@ -75,6 +87,8 @@ ON matriz_curricular.id = nucleo.id_matriz_curricular JOIN disciplina ON discipl
 JOIN bibliografia ON bibliografia.id_ementa = ementa.id 
 JOIN acervo ON bibliografia.id_acervo = acervo.id
 JOIN autor ON acervo.id_autor = autor.id*/
+
+
 
 
 
