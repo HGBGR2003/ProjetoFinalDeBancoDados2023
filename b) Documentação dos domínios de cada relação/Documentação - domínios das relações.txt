@@ -1,0 +1,200 @@
+Domínio: Curso
+Tipo De Dado: Tabela
+Descrição: Esta tabela armazena os dados referentes a cada curso da instituição.
+ID Do Curso
+Tipo de dado: Inteiro.
+Tamanho máximo: 8 bytes.
+Restrições: Chave Primária (PK).
+Descrição: Identificador exclusivo do curso.
+Nome
+Tipo de dado: Texto
+Tamanho máximo: VARCHAR de 256.
+Restrições: Chave Primária (PK).
+Descrição: Identificador do curso em questão, através do nome.
+Campus
+Tipo de dado: Texto
+Tamanho máximo: VARCHAR de 256.
+Restrições: Não possui
+Descrição: Local onde se situa o curso.
+Período
+Tipo de dado: Texto
+Tamanho máximo: VARCHAR de 256.
+Restrições: Pode receber apenas três valores (Matutino, Noturno e Integral).
+Descrição: Horário das ocorrências de aulas do campus.
+Domínio: Matriz curricular
+Tipo De Dado: Tabela
+Descrição: Esta tabela armazena os dados referentes a ementa de curso da
+instituição.
+ID Da Matriz Curricular
+Tipo de dado: Inteiro.
+Tamanho máximo: 8 bytes.
+Restrições: Chave Primária (PK).
+Descrição: Identificador exclusivo da matriz curricular.
+Ano/Período
+Tipo de dado: Inteiro
+Tamanho máximo: 4 bytes.
+Restrições: Não possui.
+Descrição: Identificador do ano ou período da ocorrência do curso.
+Domínio: Disciplina
+Tipo De Dado: Tabela
+Descrição: Esta tabela armazena os dados referentes a disciplina do curso, contendo
+pré-requisito, sim, ou não.
+ID Da Disciplina
+Tipo de dado: Inteiro.
+Tamanho máximo: 4 bytes.
+Restrições: Chave Primária (Primary Key).
+Descrição: Identificador exclusivo da disciplina como código único.
+Nome
+Tipo de dado: Texto.
+Tamanho máximo: VARHCAR 256.
+Restrições: Não possui.
+Descrição: Identificador textual, que mostra a disciplina pelo seu nome.
+Domínio: Núcleo
+Tipo De Dado: Tabela
+Descrição: Esta tabela armazena os dados referentes ao núcleo da disciplina,
+especializada ou não.
+ID Do Núcleo
+Tipo De Dado: Inteiro
+Tamanho máximo: 4 bytes.
+Restrições: Chave Primária (Primary Key).
+Descrição: Identificador inteiro, de uso exclusivo para o núcleo
+Tipo
+Tipo De Dado: Texto
+Tamanho máximo: VARCHAR 256.
+Restrições: Não possui.
+Descrição: Tipo de núcleo a que se refere determinada disciplina.
+Domínio: Carga Horária
+Tipo De Dado: Tabela
+Descrição: Esta tabela armazena os dados referentes a carga horária das disciplinas.
+ID Da Carga Horária
+Tipo de dado: Inteiro.
+Tamanho máximo: 8 bytes.
+Restrições: Chave Primária (PK).
+Descrição: Identificador exclusivo da carga horária.
+CASEP
+Tipo De Dado: Inteiro
+Tamanho máximo: 8 bytes.
+Restrições: Não possui.
+Descrição: Tipo de dado, que se refere a carga horaria da semanal presencial.
+CASED
+Tipo De Dado: Inteiro
+Tamanho máximo: 8 bytes.
+Restrições: Não possui.
+Descrição: Tipo de dado, que se refere a carga horaria da semanal à distância.
+CAST
+Tipo De Dado: Inteiro
+Tamanho máximo: 8 bytes.
+Restrições: Não possui.
+Descrição: Dado que se refere a carga horaria total da semana.
+CHTAP
+Tipo De Dado: Inteiro
+Tamanho máximo: 8 bytes.
+Restrições: Não possui.
+Descrição: Dado que se refere a carga horária total anual no momento presencial.
+CHTAD
+Tipo De Dado: Inteiro
+Tamanho máximo: 8 bytes.
+Restrições: Não possui.
+Descrição: Dado que se refere a carga horária total anual do ambiente virtual à distância.
+CHTAR
+Tipo De Dado: Inteiro
+Tamanho máximo: 8 bytes.
+Restrições: Não possui.
+Descrição: Tipo de carga horária que se refere a carga horária total anual resultante da
+disciplina.
+QAP
+Tipo De Dado: Inteiro
+Tamanho máximo: 8 bytes.
+Restrições: Não possui.
+Descrição: Tipo de carga horária que se refere quantidade de aulas presenciais da
+disciplina.
+QAEAD
+Tipo De Dado: Inteiro
+Tamanho máximo: 8 bytes.
+Restrições: Não possui.
+Descrição: Tipo de carga horária que se refere quantidade de aulas a distância da disciplina.
+Domínio: Ementa
+Tipo De Dado: Tabela
+Descrição: Esta tabela armazena os dados das ementas tratadas nas disciplinas do
+curso, do campus.
+ID Da Ementa
+Tipo de dado: Inteiro.
+Tamanho máximo: 8 bytes.
+Restrições: Chave Primária (PK).
+Descrição: Identificador exclusivo da ementa de cada disciplina do curso.
+Objetivo
+Tipo De Dado: Texto.
+Tamanho máximo: 8 bytes.
+Restrições: Não possui.
+Descrição: Tipo de dado da tabela ementa que se refere ao objetivo da disciplina.
+Conteúdo
+Tipo De Dado: Texto.
+Tamanho máximo: VARCHAR 256.
+Restrições: Não possui.
+Descrição: Dado que se refere ao conteúdo que será ministrado pela disciplina do curso.
+Domínio: Bibliografia Básica
+Tipo De Dado: Tabela
+Descrição: Esta tabela armazena os dados da bibliografia básica das disciplinas do
+curso.
+ID Da Ementa
+Tipo de dado: Inteiro.
+Tamanho máximo: 8 bytes.
+Restrições: Chave Primária (PK).
+Descrição: Identificador exclusivo da bibliografia básica de cada disciplina do curso.
+Domínio: Bibliografia Complementar
+Tipo De Dado: Tabela
+Descrição: Esta tabela armazena os dados da bibliografia complementar das
+disciplinas do curso.
+ID Da Ementa
+Tipo de dado: Inteiro.
+Tamanho máximo: 8 bytes.
+Restrições: Chave Primária (PK).
+Descrição: Identificador exclusivo da bibliografia complementar de cada disciplina do curso.
+Domínio: Acervo
+Tipo De Dado: Tabela
+Descrição: Esta tabela armazena os dados da bibliografia complementar das
+disciplinas do curso.
+ID De Acervo
+Tipo de dado: Inteiro.
+Tamanho máximo: 8 bytes.
+Restrições: Chave Primária (PK).
+Descrição: Identificador exclusivo de acervo das bibliografias do curso.
+Nome
+Tipo De Dado: Texto.
+Tamanho máximo: VARCHAR 256.
+Restrições: Chave Primária (PK).
+Descrição: Dado que se refere ao nome do livro, que está guardado no acervo das
+bibliografias.
+Ano
+Tipo De Dado: Inteiro.
+Tamanho máximo: 8 bytes.
+Restrições: Não possui.
+Descrição: Dado que se trata do ano da publicação do livro.
+Domínio: Autor
+Tipo De Dado: Tabela
+Descrição: Esta tabela armazena os dados da bibliografia complementar das
+disciplinas do curso.
+ID De Autor
+Tipo de dado: Inteiro.
+Tamanho máximo: 8 bytes.
+Restrições: Chave Primária (PK).
+Descrição: Identificador exclusivo de autor das bibliografias do curso.
+Nome
+Tipo De Dado: Texto.
+Tamanho máximo: VARCHAR 256.
+Restrições: Não possui.
+Descrição: Dado que se refere ao nome do criador da obra utilizado nas bibliografias.
+Domínio: Editora
+Tipo De Dado: Tabela
+Descrição: Esta tabela armazena os dados da bibliografia complementar das
+disciplinas do curso.
+ID De Editora
+Tipo de dado: Inteiro.
+Tamanho máximo: 8 bytes.
+Restrições: Chave Primária (PK).
+Descrição: Identificador exclusivo de editora das bibliografias do curso.
+Nome
+Tipo De Dado: Texto.
+Tamanho máximo: VARCHAR 256.
+Restrições: Não possui.
+Descrição: Dado que se refere ao nome da editora que divulga o livro das bibliografias.

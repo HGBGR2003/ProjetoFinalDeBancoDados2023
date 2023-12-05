@@ -1,0 +1,12 @@
+Modelo Lógico
+
+curso (id, nome, campus, periodo);
+matriz_curricular (id, ano_periodo, id_curso);
+nucleo (id, tipo, id_matriz_curricular);
+carga_horaria (id, casep, cased, casr, chtap, chtad, chtar, qap, qaead);
+disciplina (id, nome, id_carga_horaria, id_nucleo);
+ementa (id, objetivo, conteudo, id_disciplina);
+bibliografia (id, tipo_bibliografia, id_ementa, id_acervo);
+acervo (id, nome, ano, id_autor, id_editora);
+autor (id, nome);
+editora (id, nome);

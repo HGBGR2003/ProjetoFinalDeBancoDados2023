@@ -48,8 +48,8 @@ CREATE TABLE disciplina (
 CREATE TABLE ementa (
 	id SERIAL,
 	PRIMARY KEY(id),
-	objetivo VARCHAR (1000),
-	conteudo VARCHAR (1000),
+	objetivo VARCHAR (2000),
+	conteudo VARCHAR (2000),
 	id_disciplina INTEGER,
 	FOREIGN KEY(id_disciplina) REFERENCES disciplina (id) ON DELETE CASCADE ON UPDATE CASCADE
 );

@@ -1,0 +1,29 @@
+1 - Todas as disciplinas de uma determinada matriz separadas pelo ano/período
+
+2 - A carga horaria total por ano/período de uma determinada matriz
+
+3 - Todas as disciplinas de todos os núcleos independente do ano/período de uma determinada matriz
+
+4 - Todas as referências bibliográficas concatenadas da editora FTD
+
+5 - Todas as disciplinas do núcleo profissionalizante separados por ano/período de uma determinada matriz
+
+6 - Mostre todas as disciplinas, e a qual curso ela está associada.
+
+7 - Exiba a ementa completa envolvendo os acervo relacionados cada disciplina.
+
+8 - Mostrar o nome e o ano de todos os acervos
+
+9 - Mostre todas as disciplinas que possuem uma carga horária total anual presencial > 100.
+
+10 - Carga horária total do núcleo de disciplinas comuns para ano/periodo de número 1.
+
+11 - Todas as matrizes curriculares do curso de Informática para Internet
+
+12 - Mostre a carga horária total anual e a ementa mostrando o objetivo e o conteúdo da disciplina de Matemática 1.
+
+13 - Mostre todos acervos concatenados da "bibliografia basica".
+
+14 - A soma da quantidade de aulas presenciais e a distância de cada matriz curricular do curso de Informática para internet.
+
+15 - Mostrar a contatenação de todos os acervos e seus respectivos autores associados ao curso de Informática para internet.
